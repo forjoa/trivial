@@ -45,10 +45,17 @@ p {
     padding: 4px 8px !important;
 }
 
+/* Sobrescribir estilos de Bootstrap */
 .form-control {
-    border: none;
-    border-bottom: 1px solid white;
-    border-radius: 0;
-    background-color: transparent;
-    color: white;
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    color: white !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.form-control:focus {
+    border-color: white !important;
 }
