@@ -1,16 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(../assets/background.jpg);
 }
 
-.card.bg-opacity {
-    background-color: rgba(90, 69, 69, 0.7);
+.card {
+    max-width: 500px;
+    width: 50%;
+    background-color: transparent;
     padding: 20px;
+    backdrop-filter: blur(24px);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .container {
-    height: 100vh;
+    height: 100vh !important;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2, p {
+    margin: 0px;
 }
 
 h2 {
@@ -18,15 +35,11 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
-.border-bottom {
-    border-radius: 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 0 0 1px 0;
-    border-color: #ced4da;
-}
 
 p {
     color: white;
+}
+
+#answer {
+    padding: 4px 8px !important;
 }
