@@ -26,7 +26,8 @@ body {
     gap: 15px;
 }
 
-h2, p {
+h2,
+p {
     margin: 0px;
 }
 
@@ -42,4 +43,12 @@ p {
 
 #answer {
     padding: 4px 8px !important;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
 }

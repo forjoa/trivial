@@ -23,7 +23,7 @@
                     </p>
                 </div>
                 <p class="answer">Introduce tu respuesta</p>
-                <input type="text" name="answer" id="answer" class="form-control border-0 border-bottom p-0">
+                <input type="text" name="answer" id="answer" class="form-control p-0">
                 <input class="btn btn-primary" type="submit" value="Enviar respuesta"></input>
             </div>
         </div>
