@@ -150,4 +150,4 @@
     - Answer: Mercedes-Benz
 
 ------
-Code fully made by Alessandro Blanco & Joaquin Trujillo 
+Code fully made by [Alessandro Blanco](https://www.instagram.com/_.aalexsandro._/) & [Joaquin Trujillo](https://www.instagram.com/loveujoa/) 
