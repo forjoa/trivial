@@ -31,9 +31,19 @@
                 <p class="answer">Introduce tu respuesta</p>
                 <form action="./server/handlers.php" method="post">
                     <input type="text" name="answer" id="answer" class="form-control p-0">
-                    <input type="hidden" name="answerCorrect" value="<?php echo $selectedQuestion['respuesta']?>">
+                    <input type="hidden" name="answerCorrect" value="<?php echo $selectedQuestion['respuesta'] ?>">
                     <input class="btn btn-primary" type="submit" value="Enviar respuesta">
                 </form>
+                <?php
+                if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['correct'])) {
+                    $correct = $_GET['correct'];
+                    echo ($correct === 'true') ? '
+                    <p class="result correct">Respuesta correcta ✅
+                    </p>' : '<p class="result incorrect">Respuesta incorrecta ❌</p>';
+                } else {
+                    echo '';
+                }
+                ?>
             </div>
         </div>
     </div>
