@@ -46,6 +46,7 @@
                     </div>
                     <input type="hidden" name="answerCorrect" value="<?php echo $selectedQuestion['respuesta'] ?>">
                     <input class="btn btn-primary" type="submit" value="Enviar respuesta">
+                    <a href="level3.php">Saltar pregunta</a>
                 </form>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['correct'])) {
