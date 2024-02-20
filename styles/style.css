@@ -51,7 +51,6 @@ form  {
     padding: 4px 8px !important;
 }
 
-/* Sobrescribir estilos de Bootstrap */
 .form-control {
     border: none !important;
     border-bottom: 1px solid white !important;
@@ -79,4 +78,12 @@ form  {
 .incorrect {
     border: 1px solid rgb(147, 12, 12);
     background-color: rgba(147, 12, 12, 0.3);
+}
+
+.show-help{
+    color: rgb(160, 158, 158);
+}
+
+.show-question{
+text-wrap: balance;
 }
