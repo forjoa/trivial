@@ -3,10 +3,10 @@
 $answer = $_POST['answer'];
 $correctAnswer = $_POST['answerCorrect'];
 
-if ($correctAnswer == $answer) {
-    header("Location:" . $_SERVER['HTTP_REFERER'] . "?correct=true");
+if (strtolower($correctAnswer) == strtolower($answer)) {
+    header("Location:" . explode('?', $_SERVER['HTTP_REFERER'])[0] . "?correct=true");
 } else {
-    header("Location:" . $_SERVER['HTTP_REFERER'] . "?correct=false");
+    header("Location:" . explode('?', $_SERVER['HTTP_REFERER'])[0]  . "?correct=false");
 }
 
 
