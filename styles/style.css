@@ -41,6 +41,12 @@ p {
     color: white;
 }
 
+form  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 #answer {
     padding: 4px 8px !important;
 }
