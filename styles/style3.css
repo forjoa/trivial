@@ -1,0 +1,7 @@
+form #op1,
+form #op2 {
+    border: 1px solid white !important;
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
+    background-color: #fff2;
+}

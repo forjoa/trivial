@@ -41,7 +41,7 @@ p {
     color: white;
 }
 
-form  {
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -80,10 +80,10 @@ form  {
     background-color: rgba(147, 12, 12, 0.3);
 }
 
-.show-help{
+.show-help {
     color: rgb(160, 158, 158);
 }
 
-.show-question{
-text-wrap: balance;
+.show-question {
+    text-wrap: balance;
 }
