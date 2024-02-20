@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivial | Nivel 2</title>
+    <title>Trivial | Nivel 3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
@@ -16,7 +16,7 @@
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="card bg-opacity">
             <div class="card-body text-center">
-                <h2 class="text-center">Trivial Coches Nivel 2 </h2>
+                <h2 class="text-center">Trivial Coches Nivel 3 </h2>
                 <div>
                     <?php
                     include('./server/questions.php');
