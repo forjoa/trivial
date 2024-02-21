@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivial | Nivel 3</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/style3.css">
     <link rel="stylesheet" href="./styles/normalize.css">
@@ -74,7 +73,7 @@
                     $correct = $_GET['correct'];
                     echo ($correct === 'true') ? '
                     <p class="result correct">Respuesta correcta ✅
-                    </p><script>normalLife()</script>' : '<p class="result incorrect">Respuesta incorrecta ❌</p><script>lessLifes()</script>';
+                    </p><script>normalLife("./index.php")</script>' : '<p class="result incorrect">Respuesta incorrecta ❌</p><script>lessLifes("./index.php")</script>';
                 }
                 ?>
             </div>
