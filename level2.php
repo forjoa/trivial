@@ -5,32 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivial | Nivel 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <script src="./scripts/index3.js"></script>
     <style>
         #lifes {
             color: white;
-            display: flex;
-            gap: 4px;
+            display: block;
+            margin: auto;
             background-color: transparent;
             padding: 20px;
             backdrop-filter: blur(24px);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            position: absolute;
-            top: 150px;
-            right: 35%;
-            width: 195px;
+            margin-top: 150px;
+            max-width: 500px;
+            width: 50%;
+        }
+
+        #files > div {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
 
 <body>
     <div id="lifes">
-        <span>Te quedan</span>
-        <p>5</p><span>vidas ❤️</span>
+        <div>
+            <div>
+                <a href="home.html">Home</a>
+            </div>
+            <div>
+                <span>Te quedan</span>
+                <p>5</p><span>vidas ❤️</span>
+            </div>
+        </div>
     </div>
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="card bg-opacity">
