@@ -8,9 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="./scripts/index3.js"></script>
+    <style>
+        #lifes {
+            color: white;
+            display: flex;
+            gap: 4px;
+            background-color: transparent;
+            padding: 20px;
+            backdrop-filter: blur(24px);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 150px;
+            right: 35%;
+            width: 195px;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="lifes">
+        <span>Te quedan</span>
+        <p>5</p><span>vidas ❤️</span>
+    </div>
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="card bg-opacity">
             <div class="card-body text-center">
@@ -28,7 +49,7 @@
                     </p>
                     <p class="show-help">
                         <?php
-                        echo "La respuesta contiene " .$selectedQuestion['ayuda']. " palabras";
+                        echo "La respuesta contiene " . $selectedQuestion['ayuda'] . " palabras";
                         ?>
                     </p>
                 </div>
@@ -43,9 +64,7 @@
                     $correct = $_GET['correct'];
                     echo ($correct === 'true') ? '
                     <p class="result correct">Respuesta correcta ✅
-                    </p>' : '<p class="result incorrect">Respuesta incorrecta ❌</p>';
-                } else {
-                    echo '';
+                    </p><script>normalLife(""./level2.php)</script>' : '<p class="result incorrect">Respuesta incorrecta ❌</p><script>lessLifes("level2.php")</script>';
                 }
                 ?>
             </div>

@@ -5,7 +5,7 @@ window.onload = () => {
   }
 }
 
-function lessLifes() {
+function lessLifes(route) {
   let lifesNow = localStorage.getItem('lifes')
   if (lifesNow > 1) {
     lifesNow--
@@ -13,11 +13,11 @@ function lessLifes() {
     document.querySelector('#lifes p').textContent = lifesNow
   } else {
     alert('Te has quedado sin vidas, reinicia el juego!')
-    window.location.href = './level3.php'
+    window.location.href = route
   }
 }
 
-function normalLife () {
-    let lifesNow = localStorage.getItem('lifes')
-    document.querySelector('#lifes p').textContent = lifesNow
+function normalLife() {
+  let lifesNow = localStorage.getItem('lifes')
+  document.querySelector('#lifes p').textContent = lifesNow
 }
