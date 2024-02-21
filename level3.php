@@ -21,7 +21,7 @@
                     <?php
                     include('./server/questions.php');
                     $selectedQuestion = $resultArray[array_rand($resultArray)];
-                    $wrongAnswer = $resultArray[array_rand($resultArray) + 1] ?? $resultArray[array_rand($resultArray) - 1];
+                    $wrongAnswer = $resultArray[array_rand($resultArray)];
                     ?>
                     <p class="question">Pregunta:</p>
                     <p class="show-question">
