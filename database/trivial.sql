@@ -59,8 +59,5 @@ INSERT INTO Preguntas (pregunta, respuesta, tema, ayuda) VALUES
 ('¿Cuál es el nombre del sistema de asistencia de mantenimiento de carril de Volvo?', 'Lane Keeping Aid', 'Coches', 8),
 ('¿Qué fabricante de automóviles produce el modelo ID.4?', 'Volkswagen', 'Coches', 1),
 ('¿Cuál es el nombre del sistema de control de estabilidad de Ford?', 'AdvanceTrac', 'Coches', 7),
-('¿Qué marca de automóviles produce el modelo Kona?', 'Hyundai', 'Coches', 1),
-('¿Cuál es el nombre del sistema de detección de objetos de Honda?', 'Honda Sensing', 'Coches', 1),
-('¿Qué fabricante de automóviles produce el modelo e Tron?', 'Audi', 'Coches', 1),
-('¿Cuál es el nombre del sistema de asistencia a la frenada de emergencia de Mazda?', 'Smart City Brake Support', 'Coches', 8),
 ('¿Qué marca de automóviles produce el modelo Taycan?', 'Porsche', 'Coches', 1);
+
