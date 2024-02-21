@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivial | Nivel 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <script src="./scripts/index3.js"></script>
@@ -21,13 +20,23 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             margin-top: 150px;
+            margin-bottom: 20px;
             max-width: 500px;
             width: 50%;
         }
 
-        #files > div {
+        #lifes div {
             display: flex;
             justify-content: space-between;
+        }
+
+        #lifes div div {
+            display: flex;
+            gap: 2px;
+        }
+        #home{
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -36,7 +45,7 @@
     <div id="lifes">
         <div>
             <div>
-                <a href="home.html">Home</a>
+                <a href="home.html" id="home">Home 🏠</a>
             </div>
             <div>
                 <span>Te quedan</span>

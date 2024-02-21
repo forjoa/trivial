@@ -12,25 +12,46 @@
     <style>
         #lifes {
             color: white;
-            display: flex;
-            gap: 4px;
+            display: block;
+            margin: auto;
             background-color: transparent;
             padding: 20px;
             backdrop-filter: blur(24px);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            position: absolute;
-            top: 150px;
-            right: 35%;
-            width: 195px;
+            margin-top: 150px;
+            margin-bottom: 20px;
+            max-width: 500px;
+            width: 50%;
+        }
+
+        #lifes div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #lifes div div {
+            display: flex;
+            gap: 2px;
+        }
+        #home{
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <div id="lifes">
-        <span>Te quedan</span>
-        <p>5</p><span>vidas ❤️</span>
+        <div>
+            <div>
+                <a href="home.html" id="home">Home 🏠</a>
+            </div>
+            <div>
+                <span>Te quedan</span>
+                <p>5</p><span>vidas ❤️</span>
+            </div>
+        </div>
     </div>
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="card bg-opacity">
