@@ -78,9 +78,10 @@
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['correct'])) {
                     $correct = $_GET['correct'];
+                    $ca = $_GET['c_a'];
                     echo ($correct === 'true') ? '
                     <p class="result correct">Respuesta correcta ✅
-                    </p><script>normalLife("./index.php")</script>' : '<p class="result incorrect">Respuesta incorrecta ❌</p><script>lessLifes("./index.php")</script>';
+                    </p><script>normalLife("./index.php")</script>' : '<p class="result incorrect">Respuesta incorrecta ❌</p><p>La respuesta correcta es: '.$ca.'</p><script>lessLifes("./index.php")</script>';
                 }
                 ?>
             </div>
