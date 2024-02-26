@@ -44,13 +44,13 @@
         .skipQuestion {
             text-decoration: none;
             border: 1px solid #0d6efd;
-            background-color: #0d6efd;;
+            background-color: #0d6efd;
             color: white;
             border-radius: 3px;
             width: fit-content;
             display: block;
             padding: 0px 10px;
-            margin: 0 auto;
+            margin: 0 auto
         }
     </style>
 </head>
