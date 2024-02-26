@@ -50,7 +50,7 @@
             </div>
             <div>
                 <span>Te quedan</span>
-                <p>5</p><span>vidas ❤️</span>
+                <p></p><span>vidas ❤️</span>
             </div>
         </div>
     </div>
