@@ -1,19 +1,18 @@
-if (
-  localStorage.getItem('lifes') === '1' ||
-  localStorage.getItem('lifes') === null
-) {
-  document.querySelector('#lifes p').textContent = '5'
-  localStorage.setItem('lifes', '5')
-} else {
-  document.querySelector('#lifes p').textContent = localStorage.getItem('lifes') == null ? 5 : localStorage.getItem('lifes')
+window.onload = () => {
+  if (localStorage.getItem('lifes') == 1 || !localStorage.getItem('lifes')) {
+    const counter = document.querySelector('#lifes p').textContent
+    localStorage.setItem('lifes', counter)
+  }
+
+  document.querySelector('.skipQuestion').addEventListener('click', normalLife)
 }
 
 function lessLifes(route) {
-  let lifesNow = parseInt(localStorage.getItem('lifes'), 10)
+  let lifesNow = localStorage.getItem('lifes')
   if (lifesNow > 1) {
     lifesNow--
-    localStorage.setItem('lifes', lifesNow.toString())
-    document.querySelector('#lifes p').textContent = lifesNow.toString()
+    localStorage.setItem('lifes', lifesNow)
+    document.querySelector('#lifes p').textContent = lifesNow
   } else {
     alert('Te has quedado sin vidas, reinicia el juego!')
     window.location.href = route

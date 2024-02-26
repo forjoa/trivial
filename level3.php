@@ -63,7 +63,7 @@
             </div>
             <div>
                 <span>Te quedan</span>
-                <p></p><span>vidas ❤️</span>
+                <p id='life-n'>5</p><span>vidas ❤️</span>
             </div>
         </div>
     </div>
@@ -100,12 +100,12 @@
                     </div>
                     <input type="hidden" name="answerCorrect" value="<?php echo $selectedQuestion['respuesta'] ?>">
                     <input class="btn btn-primary" type="submit" value="Enviar respuesta">
-                    <a href="level3.php" class="skipQuestion">Saltar pregunta</a>
+                    <button class="skipQuestion">Saltar pregunta</button>
                 </form>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['correct'])) {
                     $correct = $_GET['correct'];
-                    $ca = $_GET['c_a'];
+                    $ca = $_GET['c_a'] ?? null;
                     echo ($correct === 'true') ? '
                     <p class="result correct">Respuesta correcta ✅
                     </p><script>normalLife("./index.php")</script>' : '<p class="result incorrect">Respuesta incorrecta ❌</p><p>La respuesta correcta era: '.$ca.'</p><script>lessLifes("./index.php")</script>';
