@@ -35,9 +35,22 @@
             display: flex;
             gap: 2px;
         }
-        #home{
+
+        #home {
             color: white;
             text-decoration: none;
+        }
+
+        .skipQuestion {
+            text-decoration: none;
+            border: 1px solid #0d6efd;
+            background-color: #0d6efd;;
+            color: white;
+            border-radius: 3px;
+            width: fit-content;
+            display: block;
+            padding: 0px 10px;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -87,7 +100,7 @@
                     </div>
                     <input type="hidden" name="answerCorrect" value="<?php echo $selectedQuestion['respuesta'] ?>">
                     <input class="btn btn-primary" type="submit" value="Enviar respuesta">
-                    <a href="level3.php">Saltar pregunta</a>
+                    <a href="level3.php" class="skipQuestion">Saltar pregunta</a>
                 </form>
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['correct'])) {
